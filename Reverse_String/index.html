@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+// ******************************* Reverse a string  *******************************
+
+    // var str = "Rutuja";
+    // var rev = "";
+    // for(var i=str.length-1; i>=0; i--){
+    //     rev += str[i];
+    // }
+    // console.log(rev);
+
+// ******************************* using split, tostring, and join  ************
+
+// function reverseStr(str){
+//     return str.split("").reverse().join("");
+// }
+
+// var originalStr = "Rutushar";
+// var reversedString = reverseStr(originalStr);
+// console.log(reversedString);
+
+function reverseStr(str){
+    let reversed ="";
+    for(var i=str.length-1; i>=0; i--){
+        reversed += str[i];
+    }
+    return reversed;
+}
+
+let originalStr = "OMO";
+let reversedString = reverseStr(originalStr);
+console.log(reversedString);
+
+if(originalStr == reversedString){
+    console.log("String is palindrome");
+}
+else{
+    console.log("String is not palindrome");
+}
+
+
+
+// **************************** Reverse a Number ************************
+// ******************************* using split, tostring, and join  ************
+
+    // function ReverseNumber(num){
+    //     return parseInt(num.toString().split("").reverse().join(""));
+    // }
+    // let number = 1397323123;
+    // let reversedNumber = ReverseNumber(number);
+    // console.log(reversedNumber);
+
+
+</script>
